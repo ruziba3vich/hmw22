@@ -27,7 +27,7 @@ import (
 )
 
 func main() {
-	username, err := repo.GetUserName()
+	username, err := repo.GetUserEmail()
 	if err != nil {
 		fmt.Println("error :", err)
 		return
