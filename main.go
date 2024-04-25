@@ -19,3 +19,18 @@ feature/add-user-emal degi o'zgarishlarni feature/add-username branch da merge q
 Natijada github repositoryni linkini tashlang
 
 */
+
+import (
+	"fmt"
+
+	"github.com/ruziba3vich/hmw22/repo"
+)
+
+func main() {
+	username, err := repo.GetUserName()
+	if err != nil {
+		fmt.Println("error :", err)
+		return
+	}
+	fmt.Println("username:", username)
+}
